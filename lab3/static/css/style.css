@@ -1,0 +1,45 @@
+/* Шестнадцатеричный цветовой код */
+.p-background-hex {
+    background-color: #3498db;
+}
+
+/* Название цвета */
+.p-background-color-name {
+    background-color: peachpuff;
+}
+
+/* Функция rgba */
+.p-background-rgba {
+    background-color: rgba(255, 99, 71, 0.5);
+}
+
+/* Градиентный фон */
+.p-background-gradient {
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+}
+
+/* Повторяющийся градиентный фон */
+.p-background-repeating-gradient {
+    background-image: repeating-linear-gradient(
+        45deg,
+        #ffcc33,
+        #ffcc33 10px,
+        #ff6f00 10px,
+        #ff6f00 20px
+    );
+}
+
+/* Фон изображение */
+.p-background-image {
+    background-image: url('path_to_your_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Несколько изображений в качестве фона */
+.p-background-multiple-images {
+    background-image: url('path_to_your_first_image.png'), url('path_to_your_second_image.jpg');
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
