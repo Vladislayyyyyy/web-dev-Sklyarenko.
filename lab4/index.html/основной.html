@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 4</title>
+    <!-- Connect the Roboto font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <style>
+        /* Установка шрифта Roboto и стандартных отступов для всех элементов */
+        * {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Изменение начертания шрифта на полужирный для определенных элементов */
+        main > section > article h2,
+        main > section > article h3 {
+            font-weight: 700;
+        }
+
+        /* Изменение цвета фона при наведении курсора мыши */
+        article:hover {
+            background-color: lightgrey;
+        }
+
+        /* Изменение цвета текста последнего элемента в таблице */
+        table tr td:last-child {
+            color: blue;
+        }
+
+        /* Чередование стилей строк в списках и таблицах */
+        ul li:nth-child(odd),
+        table tr:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+        /* Изменение размера шрифта первой буквы в параграфе */
+        p::first-letter {
+            font-size: 200%;
+        }
+
+        /* Стилизация выделенного текста */
+        ::selection {
+            background: yellow;
+            color: black;
+        }
+
+        /* Имитация стиля списка с использованием символов Юникода */
+        article::before {
+            content: "\2192 ";
+            font-size: 150%;
+        }
+
+        /* Добавляем правило с псевдоселектором :not */
+        h2:not(article h2) {
+            border-bottom: 2px solid #ff4500;
+        }
+
+        /* Добавляем правило с псевдоселектором :is */
+        section :is(h2, h3) {
+            color: #32cd32;
+        }
+    </style>
+</head>
+<body id="top">
+    <main>
+        <section id="text">
+            <article id="text__paragraphs">
+                 <h2>CSS Questions</h2>
+                <h3>What is Selector's Specificity?</h3>
+                <p><strong>Selector's specificity</strong> is a measure that determines which CSS rule applies when multiple rules have different selectors pointing to the same element. It's calculated based on the types of selectors used, with a scoring system that ranks inline styles, IDs, classes, pseudo-classes, attributes, elements, and pseudo-elements in descending order of priority.</p>
+                <h3>What are Complex Selectors?</h3>
+                <p><strong>Complex selectors</strong> are combinations of simple selectors, separated by combinators, that select elements based on their relationships to other elements. They can target child elements, siblings, or descendants, and are more specific than simple selectors.</p>
+                <h3>Difference Between Pseudo-Classes and Pseudo-Elements</h3>
+                <p><strong>Pseudo-classes</strong> are used to define the style of an element in a specific state, such as when it is hovered over (:hover) or when it is active (:active). <strong>Pseudo-elements</strong>, on the other hand, allow you to style certain parts of an element, like the first line (::first-line) or before and after content (::before / ::after).</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
