@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report HTML Sklyarenko</title>
+	 <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h1 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        p, ul {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: none;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+        }
+        li {
+            border-bottom: 1px dotted #ccc;
+            padding: 5px;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .block-element {
+            border: 3px dashed #666;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .inline-element {
+            border: 2px solid #000;
+            padding: 5px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+		.photo {
+            width: 100%; /* Адаптивный размер изображения */
+            max-width: 400px; /* Максимальная ширина изображения */
+            border: 5px solid #555; /* Толстая темная граница */
+            padding: 10px; /* Отступ вокруг изображения */
+            margin: 20px 0; /* Отступ сверху и снизу */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень для эффекта глубины */
+            display: block; /* Чтобы margin применялся корректно */
+            margin-left: auto; /* Выравнивание по центру */
+            margin-right: auto; /* Выравнивание по центру */
+        }
+    </style>
+</head>
+<body>
+    <h1>Report HTML Sklyarenko</h1>
+    <div class="block-element">
+        <h2>Opening Developer Console:</h2>
+        <ul>
+            <li><strong>In Mozilla Firefox:</strong></li>
+            <li>Hotkeys: <span class="inline-element">Ctrl + Shift + K</span>.</li>
+            <li>Via Menu: <span class="inline-element">Menu > Web Developer > Web Console</span>.</li>
+        </ul>
+        <ul>
+            <li><strong>In Safari:</strong></li>
+            <li>Hotkeys: <span class="inline-element">Command + Option + I</span>.</li>
+            <li>Via Menu: <span class="inline-element">Safari > Preferences > Advanced > Show Develop menu in menu bar</span>.</li>
+        </ul>
+    </div>
+    <div class="block-element">
+        <h2>Absolute vs. Relative Links:</h2>
+        <p><strong>Absolute links</strong> specify the full path to a resource, including the protocol and domain name. They are preferred when linking to an external resource or when the structure of the website may change.</p>
+        <p><strong>Relative links</strong> specify the path relative to the current location of the file. They are convenient for links within the same website, as they simplify moving the site to another domain or directory.</p>
+    </div>
+    <div class="block-element">
+        <h2>Graphic Formats in Web Development:</h2>
+        <ul>
+            <li><strong>JPG (or JPEG)</strong> - a lossy compression format, ideal for photographs with a wide range of colors.</li>
+            <li><strong>GIF</strong> - supports animation and a limited palette of 256 colors, good for simple images and animations.</li>
+            <li><strong>PNG</strong> - supports transparency and lossless compression, great for images with sharp edges, such as text and logos.</li>
+            <li><strong>WEBP</strong> - a modern format developed by Google, offers both lossy and lossless compression, providing smaller file sizes at comparable quality.</li>
+            <li><strong>SVG</strong> - a vector graphics format based on XML, allows images to be scaled without quality loss and supports interactivity and animation.</li>
+        </ul>
+    </div>
+	<img src="https://i.yapx.ru/XawuR.jpg" alt="Описание изображения" class="photo">
+	<p class="p-background-hex">Lorem ipsum dolor sit amet...</p>
+<p class="p-background-color-name">Lorem ipsum dolor sit amet...</p>
+<p class="p-background-rgba">Lorem ipsum dolor sit amet...</p>
+<p class="p-background-gradient">Lorem ipsum dolor sit amet...</p>
+<p class="p-background-repeating-gradient">Lorem ipsum dolor sit amet...</p>
+<p class="p-background-image">Lorem ipsum dolor sit amet...</p>
+
+</body>
+</html>
+```
+
