@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Новостной макет</title>
+<link rel="stylesheet" href="styless.css">
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  .main-news {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .main-news img {
+    max-width: 100%;
+  }
+  .news-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+  .news-item {
+  display: flex;
+  flex-direction: column;
+    width: 30%;
+  }
+  .news-item h3 {
+  order: 1;
+}
+  .news-item img {
+     order: 2;
+  max-width: 100%;
+  margin-top: 0.5rem;
+  }
+  .news-item p {
+  order: 4;
+  margin-top: 0.5rem;
+}
+.news-item p:first-of-type {
+  order: 3;
+}
+.news-item button {
+  order: 5;
+  margin-top: 0.5rem;
+}
+  .sidebar {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  .menu li {
+    margin-bottom: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    .main-news, .news-section {
+      flex-direction: column;
+    }
+    .news-item {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .sidebar {
+      order: 3;
+    }
+  }
+  .registration {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem;
+}
+ .registration-sidebar-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    
+    /* Стили для блока регистрации */
+    .registration {
+      width: 30%; /* или другой процент/ширина в зависимости от вашего дизайна */
+      /* Остальные стили для .registration */
+    }
+
+
+    /* Стили для сайдбара */
+    .sidebar {
+      width: calc(70% - 2rem); /* Вычитаем margin блока регистрации */
+      /* Остальные стили для .sidebar */
+    }
+
+    @media (max-width: 768px) {
+      /* Адаптивные стили для мобильных устройств */
+      .content-wrapper {
+        flex-direction: column;
+      }
+      .main-news, .registration {
+        width: 100%;
+      }
+    }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>News portal</h1>
+</div>
+ <div class="content-wrapper">
+    <div class="news-section">
+      <!-- Содержимое секции новостей -->
+    </div>
+    <div class="registration">
+      <!-- Форма регистрации -->
+    </div>
+  </div>
+  <!-- Конец нового контейнера -->
+
+  <div class="sidebar">
+    <!-- Сайдбар -->
+  </div>
+  <div class="registration-sidebar-container">
+    <div class="registration">
+      <!-- Форма регистрации -->
+    </div>
+    <div class="sidebar">
+      <!-- Сайдбар -->
+    </div>
+  </div>
+   <div class="content-wrapper">
+    <div class="main-news">
+      <!-- Содержимое секции новостей -->
+    </div>
+    <div class="registration">
+      <!-- Форма регистрации -->
+    </div>
+  </div>
+<div class="main-news">
+<h2>The headline of the main news</h2>
+  <img src="https://i.yapx.ru/Xayij.jpg" alt="Главные новости">
+  <p>As a result of recent protests in the country's capital, dozens of participants were detained. Protesters took to the streets demanding changes in government policy and better living conditions for citizens. The police used force to disperse the demonstration, which drew criticism from human rights organizations. Government officials said the protests were unauthorized and violated public order. The parties continue the dialogue to find a compromise and resolve the conflict.</p>
+  <button>Read more</button>
+</div>
+<div class="news-section">
+  <div class="news-item">
+  <h3>Breaking news</h3>
+  <img src="https://i.yapx.ru/Xayii.jpg" alt="Новость 1">
+  <p>Метаинформация</p>
+  <p>Against the background of rising oil prices and the strengthening of the national currency, the MICEX index reached a historic high. Experts predict further strengthening of the ruble and stabilization of the stock market.</p>
+  <button>more detailed</button>
+</div>
+  <div class="news-item">
+    <img src="https://i.yapx.ru/Xayii.jpg" alt="Новость 1">
+    <h3>Breaking news</h3>
+    <p>Метаинформация</p>
+    <p>Yesterday, as a result of a collision between two trains, five people were killed and dozens more were injured. The causes of the accident have not yet been determined, and the investigation is ongoing.</p>
+    <button>more detailed</button>
+  </div>
+  <div class="news-item">
+    <img src="https://i.yapx.ru/Xayii.jpg" alt="Новость 1">
+    <h3>Breaking news</h3>
+    <p>Метаинформация</p>
+    <p>The coronavirus pandemic is still having a significant impact on the country's economy. The authorities are taking measures to support small and medium-sized businesses, but many entrepreneurs are forced to cut staff or close their businesses.</p>
+    <button>more detailed</button>
+  </div>
+  <!-- Добавьте еще два элемента новостей аналогично -->
+</div>
+<!-- Добавьте этот блок в ваш <body> после <div class="news-section"> -->
+<div class="registration">
+  <h2>Регистрация</h2>
+  <form action="/submit_registration" method="post">
+    <input type="text" id="name" name="name" placeholder="Имя" required>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+    <input type="password" id="password" name="password" placeholder="Пароль" required>
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+</div>
+
+<div class="sidebar">
+  <ul class="menu">
+    <li><a href="#">Main</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Contacts</a></li>
+    <!-- Добавьте дополнительные пункты меню -->
+  </ul>
+</div>
+</body>
+</html>

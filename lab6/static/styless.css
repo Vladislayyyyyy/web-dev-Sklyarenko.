@@ -1,0 +1,31 @@
+.main-news img {
+  height: 250px;
+  width: auto;
+}
+.news-section {
+  display: flex;
+  flex-direction: column; /* Изменено с row на column */
+  margin: 1rem;
+}
+
+.news-item {
+  width: 100%; /* Изменено с 30% на 100% */
+  margin-bottom: 1rem; /* Добавлено для отступа между блоками */
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Стили для блока регистрации при широком экране */
+@media (min-width: 769px) {
+  .registration {
+    width: 30%; /* Задаем ширину, аналогичную news-item */
+    margin-right: 1rem; /* Отступ справа, если необходим */
+  }
+}
+
+/* Стили для сайдбара, чтобы он отображался под новостями и блоком регистрации */
+.sidebar {
+  order: 4; /* Устанавливаем порядок следования после основного контента */
+}

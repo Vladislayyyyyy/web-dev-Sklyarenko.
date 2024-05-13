@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Grid Layout</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Сюда добавляется ваш CSS код */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    .header img {
+      max-width: 100px; /* Установите нужный размер */
+      height: auto;
+    }
+    .nav {
+      display: flex;
+      list-style-type: none;
+    }
+    .nav li {
+      padding: 0 1rem;
+    }
+    /* Стили для .hero из второго кода */
+    .hero {
+      background-image: url("C:\Users\User\Desktop\ground\1647765809_1-amiel-club-p-kartinki-s-supergeroyami-1.png");
+      background-size: cover;
+      padding: 2rem;
+      color: white;
+      text-align: center; /* Центрирование текста */
+    }
+    .hero img {
+      max-width: 50%; /* Уменьшение размера изображения до 50% */
+      height: auto;
+    }
+    .hero h2 {
+      margin-top: 1rem; /* Добавление отступа сверху для заголовка */
+    }
+    .hero p {
+      margin-top: 0.5rem; /* Добавление отступа сверху для абзаца */
+    }
+    /* Остальные стили */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Creates four columns */
+      gap: 1rem;
+      padding: 1rem;
+      width: 100%; /* Ensures the grid takes full width of its container */
+    }
+    .news-item {
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+    .news-item img {
+      max-width: 100%;
+      height: auto;
+    }
+    .read-more {
+      background-color: blue;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://i.yapx.ru/Xaycv.jpg" alt="Logo">
+  <ul class="nav">
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Contact</li>
+  </ul>
+</div>
+
+<!-- Обновленный раздел .hero -->
+<div class="hero">
+  <div class="hero-content">
+    <h2>Superheroes</h2>
+    <div class="hero-details">
+      <img src="https://i.yapx.ru/XayXA.png" alt="Superhero Image">
+      <p>Superheroes are unusual people with incredible strength and abilities who use their abilities to protect the world and fight evil. They are ready to do the most desperate things to save the innocent and defeat the villains.
+
+Superheroes have different abilities: some can fly, others have superhuman strength or are able to control the elements of nature. But the most important thing is their kind heart and desire to help others.
+
+Each superhero has his own unique personality and story. They face various challenges and obstacles on their way, but they always remain true to their principles and values.
+
+Superheroes inspire us to be better and braver, help us believe in justice and goodness. They are a symbol of hope and protection for all who need help.
+
+So let's admire superheroes, learn from them and strive to make ourselves real heroes in our lives.Superheroes weren't always the way we know them today. Many of them went through serious trials and difficulties before they gained their unique abilities and decided to devote their lives to fighting evil.
+
+Sometimes superheroes face moral dilemmas and difficult decisions, have to compromise or make sacrifices for the common good. But they always remain true to their mission and are responsible for their actions.
+
+Superheroes often interact with each other, joining forces in the fight against powerful enemies and villains. They create teams and alliances to solve complex problems together and protect the world from dangers.
+
+Despite their abilities, superheroes also experience feelings of fear, doubt, and fatigue. But it is thanks to their willpower and faith in goodness that they overcome all obstacles and become invincible.
+
+Superheroes are not only characters from comics and movies, but also symbols of power, justice and hope. They instill in us faith in miracles and show that each of us can become a hero if we act with a pure heart and courage.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Corrected .news-grid section -->
+<div class="news-grid">
+  <div class="news-item">
+    <img src="https://i.yapx.ru/Xaycu.jpg" alt="News Image">
+    <h2>News Title 1</h2>
+    <p class="meta">Posted on 2024-05-11</p>
+    <p>This is a news excerpt...</p>
+    <a href="#" class="read-more">Read More</a>
+  </div>
+  <!-- Repeat the news-item block for the other 3 news articles -->
+  <div class="news-item"> <img src="https://i.yapx.ru/Xaycu.jpg" alt="News Image">
+    <h2>News Title 1</h2>
+    <p class="meta">Posted on 2024-05-11</p>
+    <p>This is a news excerpt...</p>
+    <a href="#" class="read-more">Read More</a>
+	</div> <!-- Second news item -->
+  <div class="news-item"> <img src="https://i.yapx.ru/Xaycu.jpg" alt="News Image">
+    <h2>News Title 1</h2>
+    <p class="meta">Posted on 2024-05-11</p>
+    <p>This is a news excerpt...</p>
+    <a href="#" class="read-more">Read More</a>
+	</div> <!-- Third news item -->
+  <div class="news-item"> <img src="https://i.yapx.ru/Xaycu.jpg" alt="News Image">
+    <h2>News Title 1</h2>
+    <p class="meta">Posted on 2024-05-11</p>
+    <p>This is a news excerpt...</p>
+    <a href="#" class="read-more">Read More</a>
+	</div> <!-- Fourth news item -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* Стили для .hero из второго кода */
+.hero {
+  background-size: cover;
+  padding: 2rem;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+}
+
+.hero-details {
+  display: flex;
+}
+
+.hero-details img {
+  max-width: 50%;
+  height: auto;
+  margin-right: 1rem; /* Добавление отступа справа для картинки */
+}
+
+.hero h2 {
+  position: absolute;
+  top: 6rem; /* Расположение заголовка над картинкой */
+  left: 2rem;
+  color: #000000; /* Установите контрастный цвет текста */
+  text-shadow: 2px 2px 4px #000000; /* Добавьте тень к тексту */
+}
+
+.hero p {
+	font-size: 20px;
+  margin-top: 0; /* Удаление отступа сверху для абзаца */
+  color: #000000; /* Установите контрастный цвет текста */
+  text-shadow: 2px 2px 4px #000000; /* Добавьте тень к тексту */
+}
